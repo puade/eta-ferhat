@@ -77,6 +77,17 @@ document.addEventListener('DOMContentLoaded', () => {
     
     backgroundMusic.play();
     musicControl.classList.remove('hidden');
+
+    // Tambahkan fungsi fullscreen
+    if (document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen().catch(err => {
+        console.warn(`Gagal fullscreen: ${err.message}`);
+      });
+    } else if (document.documentElement.webkitRequestFullscreen) { // Safari
+      document.documentElement.webkitRequestFullscreen();
+    } else if (document.documentElement.msRequestFullscreen) { // IE/Edge
+      document.documentElement.msRequestFullscreen();
+    }
   });
   
   musicControl.addEventListener('click', () => {

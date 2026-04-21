@@ -105,7 +105,7 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 15vh; /* atau 80px? lebih baik pakai vh */
+  padding-top: 5vh; /* atau 80px? lebih baik pakai vh */
 }
 
 .gif-background {
