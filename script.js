@@ -206,7 +206,7 @@ document.getElementById('formPernikahan').addEventListener('submit', function(ev
   const kehadiran = document.getElementById('kehadiran').value;
   const pesan = document.getElementById('pesan').value;
 
-  fetch('https://script.google.com/macros/s/AKfycbwuu3BDU8nnCl2ZA-wgODuQfX33B-euLlUx_zbdYEk6SopwVHUF1WhQMloCtsibyL_Wjg/exec', {
+  fetch('https://script.google.com/macros/s/AKfycbytpCxBhhFt-MU4hT7XMEMP-4uvLOqAdummTdLz1Pp4gFhIGYbIkyYKSD36-1N5fZtK/exec', {
     method: 'POST',
     headers: {'Content-Type': 'application/x-www-form-urlencoded'},
     body: new URLSearchParams({ 'nama': nama, 'kehadiran': kehadiran, 'pesan': pesan })
